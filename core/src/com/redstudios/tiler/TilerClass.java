@@ -58,7 +58,6 @@ public class TilerClass extends ApplicationAdapter implements InputProcessor{
     Container<Table> cs;
     boolean editando;
     boolean created;
-    Rectangle panel1r,panel2r;
     
     public TilerClass(final File a, final File b, final int c, final int d) {
         this.editando = false;
@@ -106,9 +105,7 @@ public class TilerClass extends ApplicationAdapter implements InputProcessor{
         separator.setBounds(398.0f, 20.0f, 4.0f, 401.0f);
         separator2.setBounds(0.0f, 17.0f, 800.0f, 4.0f);
         panel1.setBounds(0.0f, 20.0f, 398.0f, 400.0f);
-        panel1r = new Rectangle(0, 40, 398, 400);
         panel2.setBounds(402.0f, 20.0f, 398.0f, 400.0f);
-        panel2r = new Rectangle(402, 40, 398, 400);
         panel2.setVisible(false);
         
         InputMultiplexer multi = new InputMultiplexer();
