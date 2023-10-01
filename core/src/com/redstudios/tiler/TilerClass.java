@@ -595,21 +595,9 @@ public class TilerClass extends ApplicationAdapter implements InputProcessor{
 		return false;
 	}
 	
-	private float scrollpoint = 1;
-
 	@Override
 	public boolean scrolled(float amountX, float amountY) {
-		scrollpoint = Math.max(0.5f, Math.min(scrollpoint + (amountY / 10), 3));
-		resize_from_scroll(scrollpoint);
-		print("scrolldata = "+scrollpoint);
 		return false;
 	}
-	
-	private void resize_from_scroll(float amount) {
-		for(PixmapButton a:buttons_a) {
-			a.setSize(largo * scrollpoint, alto * scrollpoint);
-		}
-	}
-	
     
 }
